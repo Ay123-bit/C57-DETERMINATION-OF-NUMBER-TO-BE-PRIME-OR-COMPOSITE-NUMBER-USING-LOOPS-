@@ -4,18 +4,20 @@ int main(){
     int n;
     printf("Enter any number: ");
     scanf("%d", &n);
+    int a=0;
     for(int i=2;i<=n-1;i++){
     if(n%i==0){
-        printf("The given number is composite\n");
+        a=1;
         break;
+    }
+    }
+    if(a==0){ printf("The given number is prime\n");
     }
     else{
     printf("The given number is prime\n");
-    break;    
-    }
     }
     return 0;
 }
 //OUTPUT
-Enter any number: 34
-The given number is composite
+Enter any number: 2
+The given number is prime
